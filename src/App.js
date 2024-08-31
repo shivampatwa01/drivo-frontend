@@ -15,18 +15,20 @@ function App() {
   return (
     <div className="App">
       
-      <BrowserRouter>
+     <BrowserRouter>
       <Routes>
-      <Route path='/login' element={<Login/>} />
-      <Route path='/register' element={<Register/>} />
-      </Routes>
+          {/* Public Routes */}
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
 
-      <ProtectedRoute path='/' element={<Home/>} />
-      <ProtectedRoute path='/booking/:carid' element={ <Booking/> } />
-      <ProtectedRoute path='/userbookings' element={ <UserBookings/> } />
-      <ProtectedRoute path='/addcar' element={ <AddCar/> } />
-      <ProtectedRoute path='/editcar/:carid' element={ <EditCar/> } />
-      <ProtectedRoute path='/admincontroll/66d194d72405416f38c6c37b' element={ <AdminHome/> } />
+          {/* Protected Routes */}
+          <Route path='/' element={<ProtectedRoute element={<Home />} />} />
+          <Route path='/booking/:carid' element={<ProtectedRoute element={<Booking />} />} />
+          <Route path='/userbookings' element={<ProtectedRoute element={<UserBookings />} />} />
+          <Route path='/addcar' element={<ProtectedRoute element={<AddCar />} />} />
+          <Route path='/editcar/:carid' element={<ProtectedRoute element={<EditCar />} />} />
+          <Route path='/admincontroll/66d194d72405416f38c6c37b' element={<ProtectedRoute element={<AdminHome />} />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
@@ -34,12 +36,10 @@ function App() {
 
 export default App;
 
-export function ProtectedRoute({ element, ...rest }){
-
-  if(localStorage.getItem('user')){
-    return <Routes><Route {...rest} element={element} /></Routes>
-  }
-  else{
-     return <Navigate replace to='/login'/>
+export function ProtectedRoute({ element }) {
+  if (localStorage.getItem('user')) {
+    return element;  
+  } else {
+    return <Navigate replace to='/login' />;
   }
 }

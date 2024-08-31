@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: azure;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-shadow{
+  box-shadow: rgba(10, 163, 255, 0.12) 0px 2px 4px 0px, rgba(10, 163, 255, 0.32) 0px 2px 16px 0px;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: 600;
+  color: #0aa3ff;
+}
+
+.log-title{
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(10, 163, 255);
+}
+
+.maincol{
+  color:#0aa3ff;
+}
+
+.maincolquote{
+  color:#2595db;
+}
+
+.nav-col{
+  background: rgb(154, 194, 223);
+  
+}
+
+.bg-col{
+  background-color: rgba(154, 194, 223, 40%);
+}
+
+.header{
+  padding: 10px 50px;
+  color: #0aa3ff;
+
+}
+
+.seq-col{
+  /* color: rgb(165, 100, 100); */
+  /* color: rgba(238, 217, 217, 10); */
+  /* color: #e9c704; */
+  color: rgb(46, 44, 44);
+}
+
+.button-gradient{
+  background: rgb(0,163,255);
+background: linear-gradient(90deg, rgba(0,163,255,1) 20%, rgba(28,106,159,1) 60%, rgba(0,72,121,1) 100%);
+}
+
+.content{
+  min-height: 90vh;
+}
+
+.check-shadow{
+  box-shadow: rgba(9, 9, 9, 0.12) 0px 2px 4px 0px, rgba(9, 9, 9, 0.32) 0px 2px 16px 0px;
+}
+
+.login{
+  background-image: url("./img/loginbg.jpg");
+  background-repeat: no-repeat;
+  background-position:center ;
+  background-size: 100% 100%; 
+   height: 100vh;
+  width: 100%;
+}
+
+.home-bg{
+  background-image: url("./img/homebgreal.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%; 
+  height: 90vh;
+  width: 100%;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%,#0aa3ff);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+  animation: spinner-zp9dbg 1s infinite linear;
+}
+@keyframes spinner-zp9dbg {
+  to {
+     transform: rotate(1turn);
+  }
+}
+
+.head-border{
+  border-bottom: #000;
+}
+
+.modalStyle{
+  width: 100px;
+}
+
+.small-screen {
+  width: 1px;
+  height: 120px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 500px) {
+  .small-screen {
+    width: 0px;
+    height: 0px;
+  }
+}
+
+
+
+
+
+
+
+

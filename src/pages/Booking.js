@@ -290,7 +290,7 @@ console.log(JSON.parse(localStorage.getItem("user"))._id);
                     onChange={(e) => setContact(e.target.value)}
                     className='h-[30px] w-full border border-slate-300 rounded-md p-[3px] pl-[6px] mb-[10px]'
                 ></input></div>
-                <div className='flex gap-[250px] '>
+                <div className='flex gap-[18vw] '>
                 <button
                     onClick={() => setShowModalPayment(false)}
                     className="button-gradient w-[100px] h-[30px] mt-[10px] text-white rounded-md hover:text-black"

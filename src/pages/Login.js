@@ -63,7 +63,7 @@ export const Login = () => {
       <Toaster></Toaster>
       <div className='flex justify-end items-center '>
       
-      <form onSubmit={onSubmitHandler} className='bg-white h-[315px] w-[320px] mr-[150px] mt-[100px] p-1 border border-slate-500 rounded-2xl'>
+      <form onSubmit={onSubmitHandler} className='bg-white h-[315px] w-[320px] mr-[15vw] mt-[100px] p-1 border border-slate-500 rounded-2xl'>
       
       <h1 className='log-title mt-[-12px]' >Login</h1>
       <hr className='mt-[1px] mb-1'/>

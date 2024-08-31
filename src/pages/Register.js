@@ -65,7 +65,7 @@ export const Register = () => {
       
       <div className='flex justify-end items-center '>
       
-      <form onSubmit={onSubmitHandler} className='bg-white h-[385px] w-[320px] mr-[150px] mt-[100px] p-1 border border-slate-500 rounded-2xl'>
+      <form onSubmit={onSubmitHandler} className='bg-white h-[385px] w-[320px] mr-[15vw] mt-[100px] p-1 border border-slate-500 rounded-2xl'>
       
       <p className='log-title'>Register</p>
       <hr className='mt-[10px] mb-1'/>
